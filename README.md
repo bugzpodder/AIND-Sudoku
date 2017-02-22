@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+As we apply eliminate and only_value as part of the constraint propagation to reduce the search space, we also apply the naked twins in the same phase.  If we do find a pair of naked twin and eliminate values for other boxes in the same unit, this will further reduce the search space by enforcing these additional constraints. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+Instead of 27 units, we simply add two more units (both diagonals) as part of the solution.  Then we apply the same method of using DFS Search along with constraint propogation to find a viable solution that satisfy all the constraints (ie the numbers 1-9 in each of the 29 units)
 
 ### Install
 
